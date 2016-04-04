@@ -1,10 +1,14 @@
 {
   "name": "Cortex",
   "version": "0.1.0",
-  "main": "main.js",
+  "main": "app\\index.js",
+  "scripts": {
+    "start": "electron app\\index.js"
+  },
   "dependencies": {
     "better-console": "^0.2.4",
     "del": "^2.2.0",
+    "electron-prebuilt": "^0.36.12",
     "extend": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
@@ -26,6 +30,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
     "gulp-rtlcss": "^1.0.0",
+    "gulp-run-electron": "^1.2.2",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
@@ -37,6 +42,7 @@
   },
   "devDependencies": {
     "bower": "1.7.7",
-    "gulp-bower": "0.0.13"
+    "gulp-bower": "0.0.13",
+    "electron-prebuilt": "^0.36.0"
   }
 }

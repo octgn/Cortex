@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{838d20aa-2805-4aff-96db-f0468b5b2eaa}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>build\index.js</StartupFile>
+    <WorkingDirectory>C:\Users\itsth\programming\Cortex\build</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <NodeExePath>C:\Users\itsth\programming\Cortex\node_modules\electron-prebuilt\dist\electron.exe</NodeExePath>
+    <StartWebBrowser>False</StartWebBrowser>
+    <NodeExeArguments>
+    </NodeExeArguments>
+    <ScriptArguments>
+    </ScriptArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="bower.json" />
+    <Content Include="bower_components\jquery\.bower.json" />
+    <Content Include="bower_components\jquery\AUTHORS.txt" />
+    <Content Include="bower_components\jquery\bower.json" />
+    <Content Include="bower_components\jquery\dist\jquery.min.map" />
+    <Content Include="bower_components\jquery\dist\jquery.slim.min.map" />
+    <Content Include="bower_components\jquery\LICENSE.txt" />
+    <Content Include="bower_components\jquery\README.md" />
+    <Content Include="bower_components\jquery\sizzle\dist\sizzle.min.map" />
+    <Content Include="bower_components\jquery\sizzle\LICENSE.txt" />
+    <Content Include="bower_components\jquery\src\.jshintrc" />
+    <Content Include="bower_components\react\.bower.json" />
+    <Content Include="bower_components\react\bower.json" />
+    <Content Include="bower_components\react\LICENSE" />
+    <Content Include="bower_components\react\PATENTS" />
+    <Content Include="build\index.html" />
+    <Content Include="package.json" />
+    <Content Include="semantic.json" />
+    <Content Include="README.md" />
+    <Compile Include="bower_components\jquery\dist\jquery.js" />
+    <Compile Include="bower_components\jquery\dist\jquery.min.js" />
+    <Compile Include="bower_components\jquery\dist\jquery.slim.js" />
+    <Compile Include="bower_components\jquery\dist\jquery.slim.min.js" />
+    <Compile Include="bower_components\jquery\sizzle\dist\sizzle.js" />
+    <Compile Include="bower_components\jquery\sizzle\dist\sizzle.min.js" />
+    <Compile Include="bower_components\jquery\src\ajax.js" />
+    <Compile Include="bower_components\jquery\src\ajax\jsonp.js" />
+    <Compile Include="bower_components\jquery\src\ajax\load.js" />
+    <Compile Include="bower_components\jquery\src\ajax\parseJSON.js" />
+    <Compile Include="bower_components\jquery\src\ajax\parseXML.js" />
+    <Compile Include="bower_components\jquery\src\ajax\script.js" />
+    <Compile Include="bower_components\jquery\src\ajax\var\location.js" />
+    <Compile Include="bower_components\jquery\src\ajax\var\nonce.js" />
+    <Compile Include="bower_components\jquery\src\ajax\var\rquery.js" />
+    <Compile Include="bower_components\jquery\src\ajax\xhr.js" />
+    <Compile Include="bower_components\jquery\src\attributes.js" />
+    <Compile Include="bower_components\jquery\src\attributes\attr.js" />
+    <Compile Include="bower_components\jquery\src\attributes\classes.js" />
+    <Compile Include="bower_components\jquery\src\attributes\prop.js" />
+    <Compile Include="bower_components\jquery\src\attributes\support.js" />
+    <Compile Include="bower_components\jquery\src\attributes\val.js" />
+    <Compile Include="bower_components\jquery\src\callbacks.js" />
+    <Compile Include="bower_components\jquery\src\core.js" />
+    <Compile Include="bower_components\jquery\src\core\access.js" />
+    <Compile Include="bower_components\jquery\src\core\DOMEval.js" />
+    <Compile Include="bower_components\jquery\src\core\init.js" />
+    <Compile Include="bower_components\jquery\src\core\parseHTML.js" />
+    <Compile Include="bower_components\jquery\src\core\ready.js" />
+    <Compile Include="bower_components\jquery\src\core\support.js" />
+    <Compile Include="bower_components\jquery\src\core\var\rsingleTag.js" />
+    <Compile Include="bower_components\jquery\src\css.js" />
+    <Compile Include="bower_components\jquery\src\css\addGetHookIf.js" />
+    <Compile Include="bower_components\jquery\src\css\adjustCSS.js" />
+    <Compile Include="bower_components\jquery\src\css\curCSS.js" />
+    <Compile Include="bower_components\jquery\src\css\defaultDisplay.js" />
+    <Compile Include="bower_components\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Compile Include="bower_components\jquery\src\css\showHide.js" />
+    <Compile Include="bower_components\jquery\src\css\support.js" />
+    <Compile Include="bower_components\jquery\src\css\var\cssExpand.js" />
+    <Compile Include="bower_components\jquery\src\css\var\getStyles.js" />
+    <Compile Include="bower_components\jquery\src\css\var\isHidden.js" />
+    <Compile Include="bower_components\jquery\src\css\var\rmargin.js" />
+    <Compile Include="bower_components\jquery\src\css\var\rnumnonpx.js" />
+    <Compile Include="bower_components\jquery\src\css\var\swap.js" />
+    <Compile Include="bower_components\jquery\src\data.js" />
+    <Compile Include="bower_components\jquery\src\data\accepts.js" />
+    <Compile Include="bower_components\jquery\src\data\Data.js" />
+    <Compile Include="bower_components\jquery\src\data\support.js" />
+    <Compile Include="bower_components\jquery\src\data\var\acceptData.js" />
+    <Compile Include="bower_components\jquery\src\data\var\dataPriv.js" />
+    <Compile Include="bower_components\jquery\src\data\var\dataUser.js" />
+    <Compile Include="bower_components\jquery\src\deferred.js" />
+    <Compile Include="bower_components\jquery\src\deferred\exceptionHook.js" />
+    <Compile Include="bower_components\jquery\src\deprecated.js" />
+    <Compile Include="bower_components\jquery\src\dimensions.js" />
+    <Compile Include="bower_components\jquery\src\effects.js" />
+    <Compile Include="bower_components\jquery\src\effects\animatedSelector.js" />
+    <Compile Include="bower_components\jquery\src\effects\support.js" />
+    <Compile Include="bower_components\jquery\src\effects\Tween.js" />
+    <Compile Include="bower_components\jquery\src\event.js" />
+    <Compile Include="bower_components\jquery\src\event\ajax.js" />
+    <Compile Include="bower_components\jquery\src\event\alias.js" />
+    <Compile Include="bower_components\jquery\src\event\focusin.js" />
+    <Compile Include="bower_components\jquery\src\event\support.js" />
+    <Compile Include="bower_components\jquery\src\event\trigger.js" />
+    <Compile Include="bower_components\jquery\src\exports\amd.js" />
+    <Compile Include="bower_components\jquery\src\exports\global.js" />
+    <Compile Include="bower_components\jquery\src\intro.js" />
+    <Compile Include="bower_components\jquery\src\jquery.js" />
+    <Compile Include="bower_components\jquery\src\manipulation.js" />
+    <Compile Include="bower_components\jquery\src\manipulation\buildFragment.js" />
+    <Compile Include="bower_components\jquery\src\manipulation\createSafeFragment.js" />
+    <Compile Include="bower_components\jquery\src\manipulation\getAll.js" />
+    <Compile Include="bower_components\jquery\src\manipulation\setGlobalEval.js" />
+    <Compile Include="bower_components\jquery\src\manipulation\support.js" />
+    <Compile Include="bower_components\jquery\src\manipulation\var\nodeNames.js" />
+    <Compile Include="bower_components\jquery\src\manipulation\var\rcheckableType.js" />
+    <Compile Include="bower_components\jquery\src\manipulation\var\rleadingWhitespace.js" />
+    <Compile Include="bower_components\jquery\src\manipulation\var\rscriptType.js" />
+    <Compile Include="bower_components\jquery\src\manipulation\var\rtagName.js" />
+    <Compile Include="bower_components\jquery\src\manipulation\wrapMap.js" />
+    <Compile Include="bower_components\jquery\src\manipulation\_evalUrl.js" />
+    <Compile Include="bower_components\jquery\src\offset.js" />
+    <Compile Include="bower_components\jquery\src\outro.js" />
+    <Compile Include="bower_components\jquery\src\queue.js" />
+    <Compile Include="bower_components\jquery\src\queue\delay.js" />
+    <Compile Include="bower_components\jquery\src\selector-native.js" />
+    <Compile Include="bower_components\jquery\src\selector-sizzle.js" />
+    <Compile Include="bower_components\jquery\src\selector.js" />
+    <Compile Include="bower_components\jquery\src\serialize.js" />
+    <Compile Include="bower_components\jquery\src\support.js" />
+    <Compile Include="bower_components\jquery\src\traversing.js" />
+    <Compile Include="bower_components\jquery\src\traversing\findFilter.js" />
+    <Compile Include="bower_components\jquery\src\traversing\var\dir.js" />
+    <Compile Include="bower_components\jquery\src\traversing\var\rneedsContext.js" />
+    <Compile Include="bower_components\jquery\src\traversing\var\siblings.js" />
+    <Compile Include="bower_components\jquery\src\var\arr.js" />
+    <Compile Include="bower_components\jquery\src\var\class2type.js" />
+    <Compile Include="bower_components\jquery\src\var\concat.js" />
+    <Compile Include="bower_components\jquery\src\var\deletedIds.js" />
+    <Compile Include="bower_components\jquery\src\var\document.js" />
+    <Compile Include="bower_components\jquery\src\var\documentElement.js" />
+    <Compile Include="bower_components\jquery\src\var\hasOwn.js" />
+    <Compile Include="bower_components\jquery\src\var\indexOf.js" />
+    <Compile Include="bower_components\jquery\src\var\pnum.js" />
+    <Compile Include="bower_components\jquery\src\var\push.js" />
+    <Compile Include="bower_components\jquery\src\var\rcssNum.js" />
+    <Compile Include="bower_components\jquery\src\var\rnotwhite.js" />
+    <Compile Include="bower_components\jquery\src\var\slice.js" />
+    <Compile Include="bower_components\jquery\src\var\support.js" />
+    <Compile Include="bower_components\jquery\src\var\toString.js" />
+    <Compile Include="bower_components\jquery\src\wrap.js" />
+    <Compile Include="bower_components\react\react-dom-server.js" />
+    <Compile Include="bower_components\react\react-dom-server.min.js" />
+    <Compile Include="bower_components\react\react-dom.js" />
+    <Compile Include="bower_components\react\react-dom.min.js" />
+    <Compile Include="bower_components\react\react-with-addons.js" />
+    <Compile Include="bower_components\react\react-with-addons.min.js" />
+    <Compile Include="bower_components\react\react.js" />
+    <Compile Include="bower_components\react\react.min.js" />
+    <Compile Include="build\index.js" />
+    <Compile Include="build\lib\jquery.min.js" />
+    <Compile Include="build\lib\jquery.slim.min.js" />
+    <Compile Include="build\lib\react-dom-server.min.js" />
+    <Compile Include="build\lib\react-dom.min.js" />
+    <Compile Include="build\lib\react-with-addons.min.js" />
+    <Compile Include="build\lib\react.min.js" />
+    <Compile Include="gulpfile.js" />
+    <Content Include="app\index.html" />
+    <Compile Include="app\index.js" />
+    <Compile Include="semantic\dist\components\accordion.js" />
+    <Compile Include="semantic\dist\components\accordion.min.js" />
+    <Compile Include="semantic\dist\components\api.js" />
+    <Compile Include="semantic\dist\components\api.min.js" />
+    <Compile Include="semantic\dist\components\checkbox.js" />
+    <Compile Include="semantic\dist\components\checkbox.min.js" />
+    <Compile Include="semantic\dist\components\dimmer.js" />
+    <Compile Include="semantic\dist\components\dimmer.min.js" />
+    <Compile Include="semantic\dist\components\dropdown.js" />
+    <Compile Include="semantic\dist\components\dropdown.min.js" />
+    <Compile Include="semantic\dist\components\embed.js" />
+    <Compile Include="semantic\dist\components\embed.min.js" />
+    <Compile Include="semantic\dist\components\form.js" />
+    <Compile Include="semantic\dist\components\form.min.js" />
+    <Compile Include="semantic\dist\components\modal.js" />
+    <Compile Include="semantic\dist\components\modal.min.js" />
+    <Compile Include="semantic\dist\components\nag.js" />
+    <Compile Include="semantic\dist\components\nag.min.js" />
+    <Compile Include="semantic\dist\components\popup.js" />
+    <Compile Include="semantic\dist\components\popup.min.js" />
+    <Compile Include="semantic\dist\components\progress.js" />
+    <Compile Include="semantic\dist\components\progress.min.js" />
+    <Compile Include="semantic\dist\components\rating.js" />
+    <Compile Include="semantic\dist\components\rating.min.js" />
+    <Compile Include="semantic\dist\components\search.js" />
+    <Compile Include="semantic\dist\components\search.min.js" />
+    <Compile Include="semantic\dist\components\shape.js" />
+    <Compile Include="semantic\dist\components\shape.min.js" />
+    <Compile Include="semantic\dist\components\sidebar.js" />
+    <Compile Include="semantic\dist\components\sidebar.min.js" />
+    <Compile Include="semantic\dist\components\site.js" />
+    <Compile Include="semantic\dist\components\site.min.js" />
+    <Compile Include="semantic\dist\components\state.js" />
+    <Compile Include="semantic\dist\components\state.min.js" />
+    <Compile Include="semantic\dist\components\sticky.js" />
+    <Compile Include="semantic\dist\components\sticky.min.js" />
+    <Compile Include="semantic\dist\components\tab.js" />
+    <Compile Include="semantic\dist\components\tab.min.js" />
+    <Compile Include="semantic\dist\components\transition.js" />
+    <Compile Include="semantic\dist\components\transition.min.js" />
+    <Compile Include="semantic\dist\components\visibility.js" />
+    <Compile Include="semantic\dist\components\visibility.min.js" />
+    <Compile Include="semantic\dist\semantic.js" />
+    <Compile Include="semantic\dist\semantic.min.js" />
+    <Compile Include="semantic\gulpfile.js" />
+    <Content Include="semantic\dist\components\accordion.css" />
+    <Content Include="semantic\dist\components\accordion.min.css" />
+    <Content Include="semantic\dist\components\ad.css" />
+    <Content Include="semantic\dist\components\ad.min.css" />
+    <Content Include="semantic\dist\components\breadcrumb.css" />
+    <Content Include="semantic\dist\components\breadcrumb.min.css" />
+    <Content Include="semantic\dist\components\button.css" />
+    <Content Include="semantic\dist\components\button.min.css" />
+    <Content Include="semantic\dist\components\card.css" />
+    <Content Include="semantic\dist\components\card.min.css" />
+    <Content Include="semantic\dist\components\checkbox.css" />
+    <Content Include="semantic\dist\components\checkbox.min.css" />
+    <Content Include="semantic\dist\components\comment.css" />
+    <Content Include="semantic\dist\components\comment.min.css" />
+    <Content Include="semantic\dist\components\container.css" />
+    <Content Include="semantic\dist\components\container.min.css" />
+    <Content Include="semantic\dist\components\dimmer.css" />
+    <Content Include="semantic\dist\components\dimmer.min.css" />
+    <Content Include="semantic\dist\components\divider.css" />
+    <Content Include="semantic\dist\components\divider.min.css" />
+    <Content Include="semantic\dist\components\dropdown.css" />
+    <Content Include="semantic\dist\components\dropdown.min.css" />
+    <Content Include="semantic\dist\components\embed.css" />
+    <Content Include="semantic\dist\components\embed.min.css" />
+    <Content Include="semantic\dist\components\feed.css" />
+    <Content Include="semantic\dist\components\feed.min.css" />
+    <Content Include="semantic\dist\components\flag.css" />
+    <Content Include="semantic\dist\components\flag.min.css" />
+    <Content Include="semantic\dist\components\form.css" />
+    <Content Include="semantic\dist\components\form.min.css" />
+    <Content Include="semantic\dist\components\grid.css" />
+    <Content Include="semantic\dist\components\grid.min.css" />
+    <Content Include="semantic\dist\components\header.css" />
+    <Content Include="semantic\dist\components\header.min.css" />
+    <Content Include="semantic\dist\components\icon.css" />
+    <Content Include="semantic\dist\components\icon.min.css" />
+    <Content Include="semantic\dist\components\image.css" />
+    <Content Include="semantic\dist\components\image.min.css" />
+    <Content Include="semantic\dist\components\input.css" />
+    <Content Include="semantic\dist\components\input.min.css" />
+    <Content Include="semantic\dist\components\item.css" />
+    <Content Include="semantic\dist\components\item.min.css" />
+    <Content Include="semantic\dist\components\label.css" />
+    <Content Include="semantic\dist\components\label.min.css" />
+    <Content Include="semantic\dist\components\list.css" />
+    <Content Include="semantic\dist\components\list.min.css" />
+    <Content Include="semantic\dist\components\loader.css" />
+    <Content Include="semantic\dist\components\loader.min.css" />
+    <Content Include="semantic\dist\components\menu.css" />
+    <Content Include="semantic\dist\components\menu.min.css" />
+    <Content Include="semantic\dist\components\message.css" />
+    <Content Include="semantic\dist\components\message.min.css" />
+    <Content Include="semantic\dist\components\modal.css" />
+    <Content Include="semantic\dist\components\modal.min.css" />
+    <Content Include="semantic\dist\components\nag.css" />
+    <Content Include="semantic\dist\components\nag.min.css" />
+    <Content Include="semantic\dist\components\popup.css" />
+    <Content Include="semantic\dist\components\popup.min.css" />
+    <Content Include="semantic\dist\components\progress.css" />
+    <Content Include="semantic\dist\components\progress.min.css" />
+    <Content Include="semantic\dist\components\rail.css" />
+    <Content Include="semantic\dist\components\rail.min.css" />
+    <Content Include="semantic\dist\components\rating.css" />
+    <Content Include="semantic\dist\components\rating.min.css" />
+    <Content Include="semantic\dist\components\reset.css" />
+    <Content Include="semantic\dist\components\reset.min.css" />
+    <Content Include="semantic\dist\components\reveal.css" />
+    <Content Include="semantic\dist\components\reveal.min.css" />
+    <Content Include="semantic\dist\components\search.css" />
+    <Content Include="semantic\dist\components\search.min.css" />
+    <Content Include="semantic\dist\components\segment.css" />
+    <Content Include="semantic\dist\components\segment.min.css" />
+    <Content Include="semantic\dist\components\shape.css" />
+    <Content Include="semantic\dist\components\shape.min.css" />
+    <Content Include="semantic\dist\components\sidebar.css" />
+    <Content Include="semantic\dist\components\sidebar.min.css" />
+    <Content Include="semantic\dist\components\site.css" />
+    <Content Include="semantic\dist\components\site.min.css" />
+    <Content Include="semantic\dist\components\statistic.css" />
+    <Content Include="semantic\dist\components\statistic.min.css" />
+    <Content Include="semantic\dist\components\step.css" />
+    <Content Include="semantic\dist\components\step.min.css" />
+    <Content Include="semantic\dist\components\sticky.css" />
+    <Content Include="semantic\dist\components\sticky.min.css" />
+    <Content Include="semantic\dist\components\tab.css" />
+    <Content Include="semantic\dist\components\tab.min.css" />
+    <Content Include="semantic\dist\components\table.css" />
+    <Content Include="semantic\dist\components\table.min.css" />
+    <Content Include="semantic\dist\components\transition.css" />
+    <Content Include="semantic\dist\components\transition.min.css" />
+    <Content Include="semantic\dist\semantic.css" />
+    <Content Include="semantic\dist\semantic.min.css" />
+    <Content Include="semantic\dist\themes\basic\assets\fonts\icons.eot" />
+    <Content Include="semantic\dist\themes\basic\assets\fonts\icons.svg" />
+    <Content Include="semantic\dist\themes\basic\assets\fonts\icons.ttf" />
+    <Content Include="semantic\dist\themes\basic\assets\fonts\icons.woff" />
+    <Content Include="semantic\dist\themes\default\assets\fonts\icons.eot" />
+    <Content Include="semantic\dist\themes\default\assets\fonts\icons.svg" />
+    <Content Include="semantic\dist\themes\default\assets\fonts\icons.ttf" />
+    <Content Include="semantic\dist\themes\default\assets\fonts\icons.woff" />
+    <Content Include="semantic\dist\themes\default\assets\fonts\icons.woff2" />
+    <Content Include="semantic\dist\themes\default\assets\images\flags.png" />
+    <Content Include="semantic\dist\themes\github\assets\fonts\octicons-local.ttf" />
+    <Content Include="semantic\dist\themes\github\assets\fonts\octicons.svg" />
+    <Content Include="semantic\dist\themes\github\assets\fonts\octicons.ttf" />
+    <Content Include="semantic\dist\themes\github\assets\fonts\octicons.woff" />
+    <Content Include="semantic\tasks\README.md" />
+    <Compile Include="semantic\tasks\build.js" />
+    <Compile Include="semantic\tasks\check-install.js" />
+    <Compile Include="semantic\tasks\clean.js" />
+    <Compile Include="semantic\tasks\install.js" />
+    <Compile Include="semantic\tasks\version.js" />
+    <Compile Include="semantic\tasks\watch.js" />
+    <Compile Include="semantic\src\definitions\behaviors\api.js" />
+    <Compile Include="semantic\src\definitions\behaviors\colorize.js" />
+    <Compile Include="semantic\src\definitions\behaviors\form.js" />
+    <Compile Include="semantic\src\definitions\behaviors\state.js" />
+    <Compile Include="semantic\src\definitions\behaviors\visibility.js" />
+    <Compile Include="semantic\src\definitions\behaviors\visit.js" />
+    <Compile Include="semantic\src\definitions\globals\site.js" />
+    <Compile Include="semantic\src\definitions\modules\accordion.js" />
+    <Compile Include="semantic\src\definitions\modules\checkbox.js" />
+    <Compile Include="semantic\src\definitions\modules\dimmer.js" />
+    <Compile Include="semantic\src\definitions\modules\dropdown.js" />
+    <Compile Include="semantic\src\definitions\modules\embed.js" />
+    <Compile Include="semantic\src\definitions\modules\modal.js" />
+    <Compile Include="semantic\src\definitions\modules\nag.js" />
+    <Compile Include="semantic\src\definitions\modules\popup.js" />
+    <Compile Include="semantic\src\definitions\modules\progress.js" />
+    <Compile Include="semantic\src\definitions\modules\rating.js" />
+    <Compile Include="semantic\src\definitions\modules\search.js" />
+    <Compile Include="semantic\src\definitions\modules\shape.js" />
+    <Compile Include="semantic\src\definitions\modules\sidebar.js" />
+    <Compile Include="semantic\src\definitions\modules\sticky.js" />
+    <Compile Include="semantic\src\definitions\modules\tab.js" />
+    <Compile Include="semantic\src\definitions\modules\transition.js" />
+    <Content Include="semantic\src\themes\basic\assets\fonts\icons.svg" />
+    <Content Include="semantic\src\themes\default\assets\fonts\icons.svg" />
+    <Content Include="semantic\src\themes\default\assets\images\flags.png" />
+    <Content Include="semantic\src\themes\github\assets\fonts\octicons.svg" />
+    <Compile Include="semantic\tasks\admin\publish.js" />
+    <Compile Include="semantic\tasks\admin\register.js" />
+    <Compile Include="semantic\tasks\admin\release.js" />
+    <Compile Include="semantic\tasks\build\assets.js" />
+    <Compile Include="semantic\tasks\build\css.js" />
+    <Compile Include="semantic\tasks\build\javascript.js" />
+    <Content Include="semantic\tasks\collections\README.md" />
+    <Compile Include="semantic\tasks\collections\admin.js" />
+    <Compile Include="semantic\tasks\collections\build.js" />
+    <Compile Include="semantic\tasks\collections\internal.js" />
+    <Compile Include="semantic\tasks\collections\rtl.js" />
+    <Compile Include="semantic\tasks\config\defaults.js" />
+    <Compile Include="semantic\tasks\config\docs.js" />
+    <Compile Include="semantic\tasks\config\tasks.js" />
+    <Compile Include="semantic\tasks\config\user.js" />
+    <Compile Include="semantic\tasks\docs\build.js" />
+    <Compile Include="semantic\tasks\docs\metadata.js" />
+    <Compile Include="semantic\tasks\docs\serve.js" />
+    <Compile Include="semantic\tasks\rtl\build.js" />
+    <Compile Include="semantic\tasks\rtl\watch.js" />
+    <Compile Include="semantic\tasks\admin\components\create.js" />
+    <Compile Include="semantic\tasks\admin\components\init.js" />
+    <Compile Include="semantic\tasks\admin\components\update.js" />
+    <Compile Include="semantic\tasks\admin\distributions\create.js" />
+    <Compile Include="semantic\tasks\admin\distributions\init.js" />
+    <Compile Include="semantic\tasks\admin\distributions\update.js" />
+    <Compile Include="semantic\tasks\config\admin\github.js" />
+    <Compile Include="semantic\tasks\config\admin\oauth.example.js" />
+    <Compile Include="semantic\tasks\config\admin\release.js" />
+    <Compile Include="semantic\tasks\config\npm\gulpfile.js" />
+    <Compile Include="semantic\tasks\config\project\config.js" />
+    <Compile Include="semantic\tasks\config\project\install.js" />
+    <Compile Include="semantic\tasks\config\project\release.js" />
+    <Content Include="semantic\tasks\config\admin\templates\bower.json" />
+    <Content Include="semantic\tasks\config\admin\templates\composer.json" />
+    <Content Include="semantic\tasks\config\admin\templates\package.json" />
+    <Content Include="semantic\tasks\config\admin\templates\README.md" />
+    <Compile Include="semantic\tasks\config\admin\templates\component-package.js" />
+    <Compile Include="semantic\tasks\config\admin\templates\css-package.js" />
+    <Compile Include="semantic\tasks\config\admin\templates\less-package.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app" />
+    <Folder Include="bower_components\" />
+    <Folder Include="bower_components\jquery\" />
+    <Folder Include="bower_components\jquery\dist\" />
+    <Folder Include="bower_components\jquery\sizzle\" />
+    <Folder Include="bower_components\jquery\sizzle\dist\" />
+    <Folder Include="bower_components\jquery\src\" />
+    <Folder Include="bower_components\jquery\src\ajax\" />
+    <Folder Include="bower_components\jquery\src\ajax\var\" />
+    <Folder Include="bower_components\jquery\src\attributes\" />
+    <Folder Include="bower_components\jquery\src\core\" />
+    <Folder Include="bower_components\jquery\src\core\var\" />
+    <Folder Include="bower_components\jquery\src\css\" />
+    <Folder Include="bower_components\jquery\src\css\var\" />
+    <Folder Include="bower_components\jquery\src\data\" />
+    <Folder Include="bower_components\jquery\src\data\var\" />
+    <Folder Include="bower_components\jquery\src\deferred\" />
+    <Folder Include="bower_components\jquery\src\effects\" />
+    <Folder Include="bower_components\jquery\src\event\" />
+    <Folder Include="bower_components\jquery\src\exports\" />
+    <Folder Include="bower_components\jquery\src\manipulation\" />
+    <Folder Include="bower_components\jquery\src\manipulation\var\" />
+    <Folder Include="bower_components\jquery\src\queue\" />
+    <Folder Include="bower_components\jquery\src\traversing\" />
+    <Folder Include="bower_components\jquery\src\traversing\var\" />
+    <Folder Include="bower_components\jquery\src\var\" />
+    <Folder Include="bower_components\react\" />
+    <Folder Include="build\" />
+    <Folder Include="build\lib\" />
+    <Folder Include="semantic" />
+    <Folder Include="semantic\dist\" />
+    <Folder Include="semantic\dist\components\" />
+    <Folder Include="semantic\dist\themes\" />
+    <Folder Include="semantic\dist\themes\basic\" />
+    <Folder Include="semantic\dist\themes\basic\assets\" />
+    <Folder Include="semantic\dist\themes\basic\assets\fonts\" />
+    <Folder Include="semantic\dist\themes\default\" />
+    <Folder Include="semantic\dist\themes\default\assets\" />
+    <Folder Include="semantic\dist\themes\default\assets\fonts\" />
+    <Folder Include="semantic\dist\themes\default\assets\images\" />
+    <Folder Include="semantic\dist\themes\github\" />
+    <Folder Include="semantic\dist\themes\github\assets\" />
+    <Folder Include="semantic\dist\themes\github\assets\fonts\" />
+    <Folder Include="semantic\src" />
+    <Folder Include="semantic\src\definitions" />
+    <Folder Include="semantic\src\definitions\behaviors" />
+    <Folder Include="semantic\src\definitions\collections" />
+    <Folder Include="semantic\src\definitions\elements" />
+    <Folder Include="semantic\src\definitions\globals" />
+    <Folder Include="semantic\src\definitions\modules" />
+    <Folder Include="semantic\src\definitions\views" />
+    <Folder Include="semantic\src\site" />
+    <Folder Include="semantic\src\site\collections" />
+    <Folder Include="semantic\src\site\elements" />
+    <Folder Include="semantic\src\site\globals" />
+    <Folder Include="semantic\src\site\modules" />
+    <Folder Include="semantic\src\site\views" />
+    <Folder Include="semantic\src\themes" />
+    <Folder Include="semantic\src\themes\amazon" />
+    <Folder Include="semantic\src\themes\amazon\elements" />
+    <Folder Include="semantic\src\themes\amazon\globals" />
+    <Folder Include="semantic\src\themes\basic" />
+    <Folder Include="semantic\src\themes\basic\assets" />
+    <Folder Include="semantic\src\themes\basic\assets\fonts" />
+    <Folder Include="semantic\src\themes\basic\collections" />
+    <Folder Include="semantic\src\themes\basic\elements" />
+    <Folder Include="semantic\src\themes\basic\globals" />
+    <Folder Include="semantic\src\themes\basic\modules" />
+    <Folder Include="semantic\src\themes\basic\views" />
+    <Folder Include="semantic\src\themes\bookish" />
+    <Folder Include="semantic\src\themes\bookish\elements" />
+    <Folder Include="semantic\src\themes\bootstrap3" />
+    <Folder Include="semantic\src\themes\bootstrap3\elements" />
+    <Folder Include="semantic\src\themes\chubby" />
+    <Folder Include="semantic\src\themes\chubby\collections" />
+    <Folder Include="semantic\src\themes\chubby\elements" />
+    <Folder Include="semantic\src\themes\chubby\modules" />
+    <Folder Include="semantic\src\themes\chubby\views" />
+    <Folder Include="semantic\src\themes\classic" />
+    <Folder Include="semantic\src\themes\classic\collections" />
+    <Folder Include="semantic\src\themes\classic\elements" />
+    <Folder Include="semantic\src\themes\classic\modules" />
+    <Folder Include="semantic\src\themes\classic\views" />
+    <Folder Include="semantic\src\themes\colored" />
+    <Folder Include="semantic\src\themes\colored\modules" />
+    <Folder Include="semantic\src\themes\default" />
+    <Folder Include="semantic\src\themes\default\assets" />
+    <Folder Include="semantic\src\themes\default\assets\fonts" />
+    <Folder Include="semantic\src\themes\default\assets\images" />
+    <Folder Include="semantic\src\themes\default\collections" />
+    <Folder Include="semantic\src\themes\default\elements" />
+    <Folder Include="semantic\src\themes\default\globals" />
+    <Folder Include="semantic\src\themes\default\modules" />
+    <Folder Include="semantic\src\themes\default\views" />
+    <Folder Include="semantic\src\themes\duo" />
+    <Folder Include="semantic\src\themes\duo\elements" />
+    <Folder Include="semantic\src\themes\fixed-width" />
+    <Folder Include="semantic\src\themes\fixed-width\collections" />
+    <Folder Include="semantic\src\themes\fixed-width\modules" />
+    <Folder Include="semantic\src\themes\flat" />
+    <Folder Include="semantic\src\themes\flat\collections" />
+    <Folder Include="semantic\src\themes\flat\globals" />
+    <Folder Include="semantic\src\themes\github" />
+    <Folder Include="semantic\src\themes\github\assets" />
+    <Folder Include="semantic\src\themes\github\assets\fonts" />
+    <Folder Include="semantic\src\themes\github\collections" />
+    <Folder Include="semantic\src\themes\github\elements" />
+    <Folder Include="semantic\src\themes\github\globals" />
+    <Folder Include="semantic\src\themes\github\modules" />
+    <Folder Include="semantic\src\themes\gmail" />
+    <Folder Include="semantic\src\themes\gmail\collections" />
+    <Folder Include="semantic\src\themes\instagram" />
+    <Folder Include="semantic\src\themes\instagram\views" />
+    <Folder Include="semantic\src\themes\material" />
+    <Folder Include="semantic\src\themes\material\collections" />
+    <Folder Include="semantic\src\themes\material\elements" />
+    <Folder Include="semantic\src\themes\material\globals" />
+    <Folder Include="semantic\src\themes\material\modules" />
+    <Folder Include="semantic\src\themes\pulsar" />
+    <Folder Include="semantic\src\themes\pulsar\elements" />
+    <Folder Include="semantic\src\themes\raised" />
+    <Folder Include="semantic\src\themes\raised\elements" />
+    <Folder Include="semantic\src\themes\resetcss" />
+    <Folder Include="semantic\src\themes\resetcss\globals" />
+    <Folder Include="semantic\src\themes\round" />
+    <Folder Include="semantic\src\themes\round\elements" />
+    <Folder Include="semantic\src\themes\rtl" />
+    <Folder Include="semantic\src\themes\rtl\globals" />
+    <Folder Include="semantic\src\themes\striped" />
+    <Folder Include="semantic\src\themes\striped\modules" />
+    <Folder Include="semantic\src\themes\timeline" />
+    <Folder Include="semantic\src\themes\timeline\views" />
+    <Folder Include="semantic\src\themes\twitter" />
+    <Folder Include="semantic\src\themes\twitter\elements" />
+    <Folder Include="semantic\tasks" />
+    <Folder Include="semantic\tasks\admin" />
+    <Folder Include="semantic\tasks\admin\components" />
+    <Folder Include="semantic\tasks\admin\distributions" />
+    <Folder Include="semantic\tasks\build" />
+    <Folder Include="semantic\tasks\collections" />
+    <Folder Include="semantic\tasks\config" />
+    <Folder Include="semantic\tasks\config\admin" />
+    <Folder Include="semantic\tasks\config\admin\templates" />
+    <Folder Include="semantic\tasks\config\npm" />
+    <Folder Include="semantic\tasks\config\project" />
+    <Folder Include="semantic\tasks\docs" />
+    <Folder Include="semantic\tasks\rtl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
