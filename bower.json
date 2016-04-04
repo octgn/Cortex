@@ -1,0 +1,23 @@
+{
+  "name": "Cortex",
+  "description": "",
+  "main": "main.js",
+  "authors": [
+    "Kelly Elton <its.the.doc@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/octgn/Cortex",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "react": "^0.14.8"
+  }
+}
