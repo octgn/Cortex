@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{838d20aa-2805-4aff-96db-f0468b5b2eaa}</ProjectGuid>
     <ProjectHome />
-    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectView>ProjectFiles</ProjectView>
     <StartupFile>build\index.js</StartupFile>
     <WorkingDirectory>C:\Users\itsth\programming\Cortex\build</WorkingDirectory>
     <OutputPath>.</OutputPath>
