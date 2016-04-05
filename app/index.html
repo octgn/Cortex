@@ -5,10 +5,46 @@
         <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
     </head>
     <body>
-        <div>asdf</div>     
+        <div class="ui center aligned basic segment">
+            <div class="ui fluid action input">
+                <input type="text" placeholder="Image Folder" id="FindInDirectoryInput" />
+                <button class="ui blue right labeled icon button" id="FindInDirectoryButton">
+                    <i class="folder icon"></i>
+                    Search
+                </button>
+            </div>
+            <div class="ui horizontal divider">
+                And
+            </div>
+            <div class="ui fluid action input">
+                <input type="text" placeholder="Output Folder" id="FindOutDirectoryInput" />
+                <button class="ui blue right labeled icon button" id="FindOutDirectoryButton">
+                    <i class="folder icon"></i>
+                    Search
+                </button>
+            </div>
+        </div> 
         <script type="text/javascript">
             // Workaround: https://github.com/electron/electron/issues/254
             window.$ = window.jQuery = require('./lib/jquery.min.js');
+            $(function () {
+                $('#FindInDirectoryButton').click(function () {
+                    const dialog = require('electron').remote.dialog;
+                    var fs = require('fs');
+                    var folderPath = dialog.showOpenDialog({ properties: ['openDirectory'] });
+                    if (!folderPath) return;
+                    folderPath = folderPath[0];
+                    try {
+                        fs.accessSync(folderPath, fs.R_OK);
+                    } catch (e) {
+                        // It isn't accessible
+                        console.log(e);
+                        folderPath = false;
+                    }
+                    if (!folderPath) return;
+                    $("#FindInDirectoryInput").val(folderPath);
+                });
+            });
         </script>  
         <script src="lib/react-with-addons.min.js"></script>
         <script src="lib/react-dom.min.js"></script>
